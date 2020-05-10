@@ -7,4 +7,4 @@ before_install:
   - docker build -t vkarmadocker/frontend:travis -f Dockerfile.dev .
 
 script:
- - docker run -e CI=true vkarmadocker/frontend:travis npm run test -- --coverage
+ - docker run vkarmadocker/frontend:travis npm run test -- --coverage
